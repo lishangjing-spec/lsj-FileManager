@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - lsj-FileManager (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - lsj-FileManager (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  lsj-FileManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  lsj-FileManager: 69bd51a1f3e507aad67ba939d4986f8da16abccc
+
+PODFILE CHECKSUM: 98d34fe60828ff8d895a1985046d43b2528025e5
+
+COCOAPODS: 1.15.2

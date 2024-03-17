@@ -7,6 +7,7 @@
 //
 
 #import "LViewController.h"
+#import "LFileManager.h"
 
 @interface LViewController ()
 
@@ -18,6 +19,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *homeDir = [LFileManager homeDir];
+    NSString *documentsDir = [LFileManager documentsDir];
+    NSString *applicationSupportDirectory = [LFileManager applicationSupportDirectory];
+    NSString *libraryDir = [LFileManager libraryDir];
+    NSString *preferencesDir = [LFileManager preferencesDir];
+    NSString *cachesDir = [LFileManager cachesDir];
+    NSString *tmpDir = [LFileManager tmpDir];
+    
+    NSLog(@"homeDir = %@",homeDir);
+    NSLog(@"documentsDir = %@",documentsDir);
+    NSLog(@"applicationSupportDirectory = %@",applicationSupportDirectory);
+    NSLog(@"libraryDir = %@",libraryDir);
+    NSLog(@"preferencesDir = %@",preferencesDir);
+    NSLog(@"cachesDir = %@",cachesDir);
+    NSLog(@"tmpDir = %@",tmpDir);
 }
 
 - (void)didReceiveMemoryWarning
